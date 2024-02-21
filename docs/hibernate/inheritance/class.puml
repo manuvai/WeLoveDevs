@@ -1,0 +1,21 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/manuvai/plantuml-utils/master/class_diagram_utils.puml
+
+class Employe {
+    #int(id)
+    #string(nom)
+    #string(prenom)
+}
+
+class Administratif extends Employe {
+    -string(fonction)
+    -string(grade)
+}
+
+class Technicien extends Employe {
+    -string(specialite)
+    -string(niveau)
+}
+
+@enduml
