@@ -1,0 +1,16 @@
+@startuml
+
+!includeurl https://raw.githubusercontent.com/manuvai/plantuml-utils/master/class_diagram_utils.puml
+
+class Employe {
+    <&key> member("NUMBER", id)
+    member("VARCHAR", nom)
+    member("VARCHAR", prenom)
+    member("VARCHAR", fonction)
+    member("VARCHAR", grade)
+    member("VARCHAR", specialite)
+    member("VARCHAR", niveau)
+    member("VARCHAR", typeE)
+}
+
+@enduml
